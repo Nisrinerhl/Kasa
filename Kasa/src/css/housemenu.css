@@ -15,6 +15,26 @@
     align-items: center;
     
   }
+
+  @media screen and (max-width: 1420px) {
+    .grid-container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    .grid-container {
+      grid-template-columns: minmax(0, 1fr);
+      column-gap: 20px;
+      row-gap: 20px;
+      padding: 20px 0 22px 0;
+    }
+    .logements-menu {
+      margin-top: 0;
+      background-color: #FFF;
+    }
+  }
   
   .logements-menu h2 {
     text-align: center;

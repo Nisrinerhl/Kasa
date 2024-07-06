@@ -5,7 +5,6 @@ body {
     max-width: 1440px;
     padding: 45px 0px 0px 0px;
     gap: 50px;
-    display: flex;
     margin: 0 auto; ;
     flex-direction: column;
     padding: 0 10px; ;

@@ -1,6 +1,6 @@
 import React from "react";
-import { useState, useEffect } from 'react';//importation du hook usestate et useEffect
-import { useParams, useNavigate} from 'react-router-dom';
+import { useState, useEffect } from 'react'; /*importation du hook usestate et useEffect*/
+import { useParams, useNavigate} from 'react-router-dom'; /*importation du hook useparams et usenavigate*/
 import Slide from '../component/slide';
 import LogementData from '../data/logements.json';
 import "../css/housedescription.css"
@@ -9,27 +9,27 @@ import Stars from '../component/stars';
 import Tags from '../component/tagsname';
 
 const HousePage = () => {
-    const { id } = useParams(); // Récupère l'id du logement
-    const navigate = useNavigate(); // Permet de naviguer vers d'autres routes
-    const [house, setHouse] = useState(null); // Gère l'état du logement
+    const { id } = useParams(); /*Récupère l'id du logement*/
+    const navigate = useNavigate(); /*Navigue vers d'autres routes*/
+    const [house, setHouse] = useState(null); /*Gère l'état du logement si rempli ou vide*/
 
     useEffect(() => {
-        // Exécute un effet si changement de id et navigate
+        /*Exécute un effet si changement de id et navigate*/
         const selectedLogement = LogementData.find(logement => logement.id === id);
         if (!selectedLogement) {
-            navigate('/404'); // Redirection vers la page 404 si id inexistant
+            navigate('/404'); /*Redirige vers la page error 404 si l'id est inexistant*/
         } else {
             setHouse(selectedLogement);
         }
     }, [id, navigate]);
 
     if (!house) {
-        return null; // Affiche rien tant que house n'est pas défini
+        return null; /*N'affiche rien si le param house n'est pas défini*/
     }
 
     
 
-    // Si id est correct alors utilisation du composant Slide et Housedescription
+    /*Si id correct, utilisation des composants slide et housedescription*/
     return (
         <div>
             <Slide images={house.pictures} />

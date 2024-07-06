@@ -19,10 +19,12 @@
     padding-bottom: 24px;
     flex-wrap: wrap;
     gap: 10px;
+    padding-top: 75px;
 }
 
 @media screen and (max-width: 800px) {
     .logement-tags-list {
         padding-bottom: 16px;
+        padding-top: 10px;
     }
 }

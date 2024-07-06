@@ -54,3 +54,26 @@
         transform: scale(1);
     }
 }
+
+@media screen and (max-width: 600px) {
+    .collapse-header {
+        height: 30px;
+        padding: 10px;
+    }
+
+    .collapse-title {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .collapse-content {
+        font-size: 12px;
+        line-height: 17px;
+        padding: 13px 20px 19px 20px;
+    }
+
+    .collapse-icon {
+        width: 20px;
+        height: 16px;
+    }
+}

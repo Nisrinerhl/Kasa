@@ -5,3 +5,10 @@
   padding: 38px 78px;
   align-items: center;
 }
+
+@media screen and (max-width: 600px) {
+  .about-page {
+      padding: 19px 0;
+      gap: 20px;
+  }
+}

@@ -44,15 +44,7 @@ const HousePage = () => {
                         <div className="logement-host-and-rating">
                             <div className="logement-host">
                                 <p>{house.host.name}</p>
-                                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="32" cy="32" r="32" fill="#C4C4C4" />
-                                    <image href={house.host.picture} x="0" y="0" width="64" height="64" clip-path="url(#circleClip)" />
-                                    <defs>
-                                        <clipPath id="circleClip">
-                                            <circle cx="32" cy="32" r="32" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
+                                <img src={house.host.picture} alt="Host" className="host-picture" />
                             </div>
                             <div className="logement-rating">
                                 <Stars stars={house.stars} />

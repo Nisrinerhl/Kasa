@@ -36,3 +36,22 @@
     padding-bottom: 139px;
 }
 
+@media screen and (max-width: 960px) {
+    .error-page h1 {
+        font-size: 96px;
+    }
+
+    .error-message {
+        font-size: 18px;
+    }
+
+    .error-redirect {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .error-page h1 {
+        padding-top: 139px;
+    }
+}

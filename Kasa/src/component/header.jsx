@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom'; //import de link(lien navbar et uselocation qui est un hook)
+import { Link, useLocation } from 'react-router-dom'; /*importation de link (lien navbar et hook uselocation*/
 import '../css/header.css';
 import logo from "../images/logo-kasa.png";
 
-//creation du composant header qui contient les composants logo et nav et utilisation du hook uselocation pour obtenir l objet location
+/*Création du composant header avec les composants logo et nav et utilisation du hook uselocation pour obtenir l'objet location*/
 const Header = () => {
   const location = useLocation(); 
   return (

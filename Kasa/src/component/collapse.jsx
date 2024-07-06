@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './../css/collapse.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';//import de fontawesome
-import { faAngleUp,} from '@fortawesome/free-solid-svg-icons';//import de l icone angleup de fontawesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleUp,} from '@fortawesome/free-solid-svg-icons';
 
-//creation de collapse en utilisant les props title et content
+/*création de collapse en utilisant les props title et content*/
 
 const Collapse = ({ title, content }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);

@@ -4,20 +4,20 @@ import arrowLeft from '../images/arrow_left.png';
 import arrowRight from '../images/arrow_right.png';
 import propTypes from 'prop-types';
 
-/*composant Slide qui recoit une prop images qui est un tableau contenant les chemins vers les images a afficher*/
+/*composant Slide qui recoit une prop images qui est un tableau contenant les chemins vers les images à afficher*/
 const Slide = ({ images }) => {
-    const [currentSlide, setCurrentSlide] = useState(0);//maintient l indice de l image actuellement affiche
+    const [currentSlide, setCurrentSlide] = useState(0);/*Garde l'image actuellement affiché*/
 
-    /*avancer vers l image suivante*/
+    /*slider vers l'image suivante*/
     const nextSlide = () => {
         setCurrentSlide((currentSlide + 1) % images.length);
     };
-/*reculer vers l image précédente*/
+    /*reculer vers l'image précédente*/
     const prevSlide = () => {
-        setCurrentSlide((currentSlide - 1 + images.length) % images.length);//met a jour currentslide en fonction du nombre total d images
+        setCurrentSlide((currentSlide - 1 + images.length) % images.length);/*Met à jour le slide actuel en fonction de l'image affichée*/
     };
 
-    /*Ecouter les evenements clavier pour changer d image*/
+    /*Ecouteur d'évènement pour changer d'image*/
     useEffect(() => {
         const handleKeyDown = (event) => {
             if (event.key === 'ArrowLeft') {

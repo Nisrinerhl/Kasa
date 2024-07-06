@@ -1,8 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types'; // Pour la validation des props
+import PropTypes from 'prop-types'; /*validation des props*/
 import './../css/banner.css'; 
 
-// Définir le composant Banner
+/*Composant banner*/
 const Banner = ({ image, altText, text, additionalClass }) => (
   <div className={`banner ${additionalClass}`}>
     <img src={image} alt={altText} className="banner-image" />
@@ -10,7 +10,7 @@ const Banner = ({ image, altText, text, additionalClass }) => (
   </div>
 );
 
-// Valider les types des props
+/*Validation de chaque types de props*/
 Banner.propTypes = {
   image: PropTypes.string.isRequired,
   altText: PropTypes.string.isRequired,
@@ -18,11 +18,11 @@ Banner.propTypes = {
   additionalClass: PropTypes.string,
 };
 
-// Définir les props par défaut
+/*Props par défauts*/
 Banner.defaultProps = {
   text: '',
   additionalClass: '',
 };
 
-// Exporter le composant
+
 export default Banner;

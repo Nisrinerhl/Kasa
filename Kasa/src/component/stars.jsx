@@ -17,7 +17,7 @@ const Stars = ({ rating }) => {
     };
     return <div className="rating">{renderStars()}</div>;
 };
-//validation des props
+/*validation des props*/
 Stars.propTypes = {
     rating: propTypes.number.isRequired
 };

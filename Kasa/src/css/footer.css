@@ -18,7 +18,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 25px;
 }
+
 
 .content {
     width: 513px;

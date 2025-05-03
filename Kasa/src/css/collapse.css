@@ -17,6 +17,10 @@
    
 }
 
+.collapse-content p {
+    color: black;
+}
+
 .collapse-header {
     display: flex;
     justify-content: space-between;
